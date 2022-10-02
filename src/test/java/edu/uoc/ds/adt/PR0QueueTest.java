@@ -28,11 +28,11 @@ public class PR0QueueTest {
 
 
         this.pr0q.fillQueue();
-        assertEquals(Integer.valueOf(this.pr0q.getQueue().size()), Integer.valueOf(this.pr0q.CAPACITY));
+        assertEquals(this.pr0q.CAPACITY, this.pr0q.getQueue().size());
 
         assertEquals(this.pr0q.clearFullQueue(), new String("0 1 2 3 4 5 6 7 8 "));
 
-        assertEquals(Integer.valueOf(this.pr0q.getQueue().size()), Integer.valueOf(0));
+        assertEquals(0, this.pr0q.getQueue().size());
     }
 
 }

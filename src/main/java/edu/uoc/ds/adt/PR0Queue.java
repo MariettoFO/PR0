@@ -8,7 +8,7 @@ public class PR0Queue {
 
     public final int CAPACITY = 9;
 
-    private Queue<Character> queue;
+    private Queue<Integer> queue;
 
     public PR0Queue() {
         newQueue();
@@ -18,8 +18,8 @@ public class PR0Queue {
     }
 
     public void fillQueue() {
-        for (char c = '0'; c < '9'; c++) {
-            queue.add(Character.valueOf(c));
+        for (int c = 0; c < 9; c++) {
+            queue.add(c);
         }
     }
 
@@ -33,7 +33,7 @@ public class PR0Queue {
         return sb.toString();
     }
 
-    public Queue<Character> getQueue() {
+    public Queue<Integer> getQueue() {
         return this.queue;
     }
 
